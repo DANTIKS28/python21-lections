@@ -1,0 +1,33 @@
+ls - pokasivaet vse faili papki v vnutri tecuwei directore
+ls test - pokasivaet vce faili i papki vnutri papki test 
+ls -a - pokasivaet takwe ckritie faili i papki
+ls -la - pokasivaet bolee podrobnuu infu 
+cd - perexodit v home papku 
+cd ~  - perexodit v home papku 
+cd test - perexodit v papku test 
+cd . - perexodit v tecuwuu papku 
+cd .. - perexodit v prededuwuu papku
+cd - vozrowaetci v prededuwuu sostoinie
+cd ../.. - perexodit na 2 papki nazad
+cd test/test2  -  perexodit v papku test2, kotorau nahoditci v papki test 
+
+
+mkdir test - cozdait papku test
+mkdir test/test2 -  sozdaet test2 vnuri test(ecli papka test ect)
+mkdir test test2 -  sozdaet papki test1 i test2
+
+touch test.txt - sozdaet fail test.txt 
+touch test/test.txt -  sozdaet fail test.txt v nutri papki test
+touch test/test1/test2.txt - sozdaet faili test1 i text2.txt
+touch test{1,2,3,4,5,6....}.txt - sozdaet faili tets1, test 2, test3 ....
+rm test - delite fail test (ecli this not papka)
+rm -rf test -  delite fail or papku co vcem codejimim (bez vozvratno)
+rm -rf / !!!!!!!!! Ne Rite !!!!!!!!!!!!!!!
+pwd - pokazivaet gde mi seighas nahodimsi
+cat test.txt - pokasivaet soderzimoe failov
+
+nano test.txt - open test.txt v redactore coda nano v terminale 
+code test.txt - open test.txt v redactore coda vscode 
+sudo - prava super user do 
+sudo apt install git 
+sudo snap install code --classic 
