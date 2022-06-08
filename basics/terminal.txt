@@ -31,3 +31,4 @@ code test.txt - open test.txt v redactore coda vscode
 sudo - prava super user do 
 sudo apt install git 
 sudo snap install code --classic 
+
