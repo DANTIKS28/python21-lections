@@ -65,7 +65,6 @@ dir(str) # позволяет посмотреть все методы клас�
 'hello'.count('l') # 2
 'hello'.count('ll') #1 
 'hello hello'.count('hello') #2
-def f(): ...
 'hello world'.startswith('hell') # true
 'hello world'.endswith('ld') #true
 'hello world'.startswith('H') # false
@@ -93,7 +92,7 @@ def f(): ...
 # 0 1 2 3 4 5 6 7 8 9 10
 string = 'hello world' 
 string[0] # h
-string[10] # d
+string[10] # 
 string[5] # ' '
 
 # cрез - подстрока строки
@@ -105,7 +104,7 @@ string[:5] #'hello'
 string[6:] # 'world'
 string[:] #'hello world'
 string[0:11:2] # 'hlowrd'
-string[::3] # 'hlwl'
+string[::3] # 'hll'
 string[::-1] # 'dlrow olleh'
 string == string[0::1]
 
