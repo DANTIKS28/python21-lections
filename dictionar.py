@@ -54,7 +54,7 @@ dict2 = {3:"d", 4:"e"}
 # метод update добовляет пары из второго словаря 
 dict1.update(dict2)
 print(dict1) # {1:"a", 2:"b", 3:"d", 4:"e"}
-print(dict2) # {3:"d", 4:"e"}
+print(dict2) # {3:"d", 4:"e"}d
 
 popped = dict1.pop(3) 
 print(dict1) # {1:"a", 2:"b", 3:"d", 4:"e"}

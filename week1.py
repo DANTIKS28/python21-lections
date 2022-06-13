@@ -13,9 +13,9 @@
 Ваш пароль должен содержать только буквы
 
 """
-password = input('Введите пароль: ')
-if password.isdigit() and len(password) >= 8:
-    print('Ваш пароль сохранен')
+# password = input('Введите пароль: ')
+# if password.isdigit() and len(password) >= 8:
+#     print('Ваш пароль сохранен')
 
 
 """
@@ -40,3 +40,10 @@ if password.isdigit() and len(password) >= 8:
 Вывод: Вы проиграли!
 """
 #писать код здесь
+
+
+a = int(input('сколько гостей будет: '))
+guests = {}
+for i in range(1, a + 1):
+  name = input('enter name guest')
+  guests.setdefault(i, name)
