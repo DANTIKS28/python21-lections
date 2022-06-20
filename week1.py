@@ -1,35 +1,29 @@
-"""
-1) Напишите программу, которая запрашивает с ввода семь чисел через запятую, добавляет их в список. На экран выводит первое и последнее число списка. Затем удаляет последнее число и вместо него вставляет слово “Makers”.
-Например: 
-Ввод: Введите цифры через запятую: 5, 7, 8, 1, 3, 0, 8
-Вывод: 5 8
-[5, 7, 8, 1, 3, 0, 'Makers']
-"""
-numbers_str = input('введите семь чисел через ,').split(',')
-numbers_int = []
-for number in numbers_str:
-  numbers_int.append(int(number))
-print(numbers_int[0], numbers_int[-1])
+import random
 
-"""
-2) Напишите программу, которая генерирует 10 случайных чисел, добавляет их в список и возвращает вам список этих чисел в отсортированном виде в порядке возрастания.
-"""
-from random import sample
+guesses_made = 0
 
-number = sample(range(0, 10), k=10)
-print(numbers)
-print(sorted(numbers))
-print(numbers)
+i = input('Привет! Как тебя зовут?\n')
 
-"""
-3) Напишите программу, которая заполняет список словами, введенными с клавиатуры, измеряет длину каждого слова и добавляет полученное значение в другой список. Например, список слов – ['yes', 'no', 'maybe', 'ok', 'what'], список длин – [3, 2, 5, 2, 4]. Оба списка должны выводиться на экран.
-"""
-list_lenght = int(input('Enter list lenght'))
-word = []
-words_lenght = []
-for i in range(list_lenght):
-    word = input('Enter word: ')
-    words.append(word)
-for i in words:
-    words_lenght.append(len(i))
-print(words_lenght)
+number = random.randint(1, 100)
+print ('Отлично, {0}, я загадал число между 1 и 100. Сможешь угадать?'.format(i))
+
+
+while guesses_made < 6:
+    
+    guess = int(input('Введи число: '))
+    
+    guesses_made += 1
+
+    if guess < number:
+        print ('Твое число меньше того, что я загадал.')
+
+    elif guess > number:
+        print ('Твое число больше загаданного мной.')
+
+    elif guess == number:
+        break
+
+    elif guess == number:
+        print ('Ух ты, {0}! Ты угадал мое число, использовав {1} попыток!'.format(i, guesses_made))
+else:
+    print ('А вот и не угадал! Я загадал число {0}'.format(number))

@@ -147,3 +147,5 @@ dict4[key3] = value3
 dict5 = dict(['abc']) # ValueError: dictionary update sequence element #0 has length 3; 2 is required
 key1, value1 = 'abc' #
 dict5[key1] = value1
+
+print([i.lower() for i in 'HELLO'])
